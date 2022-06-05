@@ -1,0 +1,24 @@
+:root {
+  /* Primary Color */
+  --color-soft-red: hsl(10, 79%, 65%);
+  --color-soft-cyan: hsl(186, 34%, 60%);
+
+  /* Neutral Color */
+  --color-dark-brown: hsl(25, 47%, 15%);
+  --color-medium-brown: hsl(28, 10%, 53%);
+  --color-Cream: hsl(27, 66%, 92%);
+  --color-very-pale-orange: hsl(33, 100%, 98%);
+
+  /* Size (width)*/
+  --size-mobile: 375px;
+  --size-desktop: 1440px;
+
+  /* Font */
+  --size-body-font: 18px;
+  --weight-font: 400;
+  --weight-font2: 700;
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+}
