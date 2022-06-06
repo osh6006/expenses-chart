@@ -24,6 +24,7 @@
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <style>
       .attribution {
+        margin-top: 20px;
         font-size: 11px;
         text-align: center;
       }
@@ -32,18 +33,39 @@
       }
     </style>
     <link rel="stylesheet" href="style.css" />
-    <script src="/main.js" defer></script>
+    <script src="/src/main.js" defer></script>
   </head>
   <body>
     <section id="balance">
-      <div>My balance</div>
-      <div>$921.48</div>
+      <span class="balance__title"
+        >My balance
+        <div class="balance__price">$921.48</div>
+      </span>
+      <span class="balance__logo"><img src="images/logo.svg" alt="" /></span>
     </section>
+
     <section id="contents">
-      <div>Spending - Last 7 days</div>
-      <div>mon tue wed thu fri sat sun</div>
-      <div>Total this month</div>
-      <div>$478.33 +2.4% from last month</div>
+      <div class="contents__title">Spending - Last 7 days</div>
+      <div>
+        <ul class="contents__chart graph">
+          <li class="wrap">
+            <div class="amount">$100</div>
+            <div class="graph-bar mon"></div>
+            <div class="day">mon</div>
+          </li>
+        </ul>
+      </div>
+      <div class="line"><hr /></div>
+      <div class="contents__total">
+        <div class="contents__total__title">Total this month</div>
+        <div class="contents__total__price">
+          <span class="total__money">$478.33</span>
+          <div class="add__percentage">
+            <span class="add">+2.4%</span>
+            <span class="last_month">from last month</span>
+          </div>
+        </div>
+      </div>
     </section>
 
     <div class="attribution">

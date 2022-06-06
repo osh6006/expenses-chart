@@ -1,1 +1,161 @@
+:root {
+  /* Primary Color */
+  --color-soft-red: hsl(10, 79%, 65%);
+  --color-soft-cyan: hsl(186, 34%, 60%);
 
+  /* Neutral Color */
+  --color-dark-brown: hsl(25, 47%, 15%);
+  --color-medium-brown: hsl(28, 10%, 53%);
+  --color-cream: hsl(27, 66%, 92%);
+  --color-very-pale-orange: hsl(33, 100%, 98%);
+
+  /* Size (width)*/
+  --size-mobile: 375px;
+  --size-desktop: 1440px;
+  --size-border: 16px;
+  --size-margin-right: 8px;
+
+  /* Font */
+  --size-body-font: 18px;
+  --size-view-width: 550px;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "DM Sans", sans-serif;
+  background-color: var(--color-cream);
+}
+
+ul li {
+  list-style-type: none;
+  float: left;
+}
+
+#balance {
+  display: inline-flex;
+  width: var(--size-view-width);
+  height: 110px;
+  align-items: center;
+  justify-content: space-around;
+  background-color: hsl(10, 79%, 65%);
+  border-radius: var(--size-border);
+  color: white;
+  gap: 280px;
+}
+
+.balance__price {
+  margin-top: 4px;
+  font-weight: 700;
+  font-size: 30px;
+}
+
+#contents {
+  width: var(--size-view-width);
+  margin-top: 32px;
+  background-color: white;
+  border-radius: var(--size-border);
+}
+
+.contents__title {
+  font-size: 32px;
+  color: var(--color-dark-brown);
+  font-weight: 700;
+  margin-top: 32px;
+  margin-left: 32px;
+}
+
+.graph {
+  width: 500px;
+  height: 300px;
+  position: relative;
+}
+
+/* 최대한 아래로 내리는 방법 bottom:0 */
+.wrap {
+  width: 45px;
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+}
+
+.graph-bar {
+  width: 45px;
+  height: 40px;
+  background-color: var(--color-soft-red);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.amount {
+  width: 50px;
+  color: white;
+  font-size: 20px;
+  margin-left: -8px;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: var(--color-dark-brown);
+  text-align: center;
+  margin-bottom: 8px;
+  visibility: hidden;
+}
+
+.day {
+  text-align: center;
+  color: var(--color-medium-brown);
+}
+.mon:hover {
+  background-color: var(--color-soft-cyan);
+}
+
+.line {
+  margin-left: 32px;
+  margin-right: 32px;
+  margin-top: 32px;
+  margin-bottom: 32px;
+  width: 480px;
+  height: 0px;
+  color: var(--color-medium-brown);
+  size: 0.1em;
+}
+
+.contents__total {
+  margin-bottom: 32px;
+}
+
+.contents__total__title {
+  margin-left: 32px;
+  color: var(--color-medium-brown);
+}
+
+.total__money {
+  font-size: 48px;
+  color: var(--color-dark-brown);
+  font-weight: 700;
+  margin-top: 32px;
+  margin-left: 32px;
+}
+
+.add__percentage {
+  margin-top: 16px;
+  margin-right: 32px;
+  float: right;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+.add {
+  margin-left: 72px;
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--color-dark-brown);
+}
+
+.last_month {
+  display: block;
+  color: var(--color-medium-brown);
+}
